@@ -4,7 +4,7 @@
 
 In this project, we'll cover how to use Angular services to separate the management of data from the controller. We'll also cover how to use `$http` to fetch data from a live API. 
 
-Live example: <a href="#">Click Me!</a>
+Live example: <a href="https://devmountain.github.io/angular-2-mini/">Click Me!</a>
 
 ## Step 1
 
