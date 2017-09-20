@@ -2,14 +2,14 @@ angular.module('myApp').service('productsSrvc', function( $http ) {
   this.getShoeData = function() {
     return $http({
       method: 'GET',
-      url: 'http://localhost:3000/shoes'
+      url: 'https://practiceapi.devmountain.com/products?category=shoes'
     });
   };
 
   this.getSockData = function() {
     return $http({
       method: 'GET',
-      url: 'http://localhost:3000/socks'
+      url: 'https://practiceapi.devmountain.com/products?category=socks'
     });
   };
 });
