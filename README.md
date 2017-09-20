@@ -2,9 +2,7 @@
 
 # Project Summary
 
-In this project, we'll implement routing into an Angular application. You'll notice that the `js/` folder has another level of folders inside of it. The Angular community has found that the best way to organize your files, so your project can scale, is to break out your code into "features". Therefore, you'll find all the HTML and JS for each feature in its matching folder. Take a minute to get familiar with the file structure.
-
-Live example: <a href="https://devmountain.github.io/angular-3-mini/#!/">Click Me!</a>
+In this project, we'll implement routing and $http requests into an Angular application. You'll notice that the `js/` folder has another level of folders inside of it. The Angular community has found that the best way to organize your files, so your project can scale, is to break out your code into "features". Therefore, you'll find all the HTML and JS for each feature in its matching folder. Take a minute to get familiar with the file structure.
 
 ## Setup
 
@@ -12,7 +10,6 @@ Live example: <a href="https://devmountain.github.io/angular-3-mini/#!/">Click M
 * `cd` into the project directory.
 * Run `npm install`.
 * After `npm install`, run `npm run dev`.
-* In another terminal window, run `npm run start-db`.
 * Take a minute to familiarize yourself with the file structure.
 
 ## Step 1
@@ -139,9 +136,13 @@ In this step, we'll update the `productsSrvc.js` to hit an API to get an array o
 * Open `js/products/productsSrvc.js`.
 * Inject `$http` into the service.
 * Create a method on the service called `getShoeData`:
-  * This method should return a promise of an `$http` GET request to `http://localhost:3000/shoes`.
+  * This method should return a promise of a `$http` GET request:
+    * The base url of this request should be: `https://practiceapi.devmountain.com/products`.
+    * A `category` query should be added to the URL with a value of `shoes`.
 * Create a method on the service called `getSockData`:
-  * This method should return a promise of an `$http` GET request to `http://localhost:3000/socks`.
+  * This method should return a promise of a `$http` GET request:
+    * The base url of this request should be: `https://practiceapi.devmountain.com/products`.
+    * A `category` query should be added to the URL with a value of `socks`.
 
 ### Solution
 
@@ -154,14 +155,14 @@ angular.module('myApp').service('productsSrvc', function( $http ) {
   this.getShoeData = function() {
     return $http({
       method: 'GET',
-      url: 'http://localhost:3000/shoes'
+      url: 'https://practiceapi.devmountain.com/products?category=shoes'
     });
   };
 
   this.getSockData = function() {
     return $http({
       method: 'GET',
-      url: 'http://localhost:3000/socks'
+      url: 'https://practiceapi.devmountain.com/products?category=socks'
     });
   };
 });
@@ -284,4 +285,3 @@ If you see a problem or a typo, please fork, make the necessary changes, and cre
 <p align="center">
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250">
 </p>
-
