@@ -1,0 +1,12 @@
+{
+  "name": "angular-2-mini",
+  "version": "1",
+  "scripts": {
+    "start-db": "json-server --watch db.json",
+    "dev": "live-server ./"
+  },
+  "dependencies": {
+    "json-server": "^0.12.0",
+    "live-server": "^1.2.0"
+  }
+}
