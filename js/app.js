@@ -1,1 +1,1 @@
-angular.module('userProfiles', []);
+angular.module('myApp', []);
