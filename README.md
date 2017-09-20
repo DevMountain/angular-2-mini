@@ -2,9 +2,7 @@
 
 # Project Summary
 
-In this project, we'll implement routing into an Angular application. You'll notice that the `js/` folder has another level of folders inside of it. The Angular community has found that the best way to organize your files, so your project can scale, is to break out your code into "features". Therefore, you'll find all the HTML and JS for each feature in its matching folder. Take a minute to get familiar with the file structure.
-
-Live example: <a href="https://devmountain.github.io/angular-3-mini/#!/">Click Me!</a>
+In this project, we'll implement routing and $http requests into an Angular application. You'll notice that the `js/` folder has another level of folders inside of it. The Angular community has found that the best way to organize your files, so your project can scale, is to break out your code into "features". Therefore, you'll find all the HTML and JS for each feature in its matching folder. Take a minute to get familiar with the file structure.
 
 ## Setup
 
@@ -284,4 +282,3 @@ If you see a problem or a typo, please fork, make the necessary changes, and cre
 <p align="center">
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250">
 </p>
-
