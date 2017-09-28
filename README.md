@@ -96,6 +96,7 @@ In this step, we'll inject `ui.router` into our Angular application and define t
       * url: A string that specifies the route
       * templateUrl: A string that is a file path to the HTML. 
       * controller: A string that specifies what controller the HTML should use.
+        * Only use `controller` for the features that have a `controller`.
 * Call `$urlRouterProvider` and chain a `.otherwise` and pass in `'/'`.
 
 ### Solution
@@ -109,8 +110,7 @@ angular.module('myApp', ['ui.router']).config( function( $stateProvider, $urlRou
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'js/home/homeTmpl.html',
-      controller: 'homeCtrl'
+      templateUrl: 'js/home/homeTmpl.html'
     })
     .state('products', {
       url: '/products/:id',
@@ -119,8 +119,7 @@ angular.module('myApp', ['ui.router']).config( function( $stateProvider, $urlRou
     })
     .state('settings', {
       url: '/settings',
-      templateUrl: 'js/settings/settingsTmpl.html',
-      controller: 'settingsCtrl'
+      templateUrl: 'js/settings/settingsTmpl.html'
     });
 
   $urlRouterProvider
