@@ -76,10 +76,13 @@ In this step, we'll create a container where the routing HTML will live. We'll a
 
 ### Summary
 
-In this step, we'll inject `ui.router` into our Angular application and define the available routes.
+In this step, we'll inject `ui.router` into our Angular application and define the available routes. We'll also have to add `ui.router`'s CDN into our `index.html`.
 
 ### Instructions
 
+* Open `index.html`.
+* Add a new script tag for the `ui.router` CDN just below the Angular CDN:
+  * `https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js`
 * Open `js/app.js`.
 * Inject `ui.router` into `myApp`.
 * Chain a `.config` to `myApp` that uses an anonymous function.
