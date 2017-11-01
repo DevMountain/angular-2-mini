@@ -1,3 +1,3 @@
-angular.module('myApp').service('productSrvc', function() {
+angular.module('myApp').service('productsSrvc', function() {
 
 });
