@@ -4,7 +4,9 @@
 
 In this project, we'll implement routing and $http requests into an Angular application. You'll notice that the `js/` folder has another level of folders inside of it. The Angular community has found that the best way to organize your files, so your project can scale, is to break out your code into "features". Therefore, you'll find all the HTML and JS for each feature in its matching folder. Take a minute to get familiar with the file structure.
 
-Live Exmaple: <a href="https://devmountain.github.io/angular-2-mini/">Click Me!</a>
+# Live Example:
+
+<a href="https://devmountain.github.io/angular-2-mini/">Click Me!</a>
 
 ## Setup
 
